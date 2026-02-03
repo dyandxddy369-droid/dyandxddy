@@ -17,7 +17,7 @@ export default function SendDemoPage() {
   return (
     <div className="container py-12">
       <h1 className="text-3xl md:text-5xl font-bold">Send Demo</h1>
-      <p className="mt-4 text-muted-foreground">Share your best, finished work. We focus on PHNK, WAVE, Bassline, and Electronic.</p>
+      <p className="mt-4 text-muted-foreground">Share your best, finished work. We accept all music genres.</p>
 
       <form onSubmit={onSubmit} className="mt-8 grid md:grid-cols-2 gap-6">
         <div>
@@ -30,11 +30,36 @@ export default function SendDemoPage() {
         </div>
         <div>
           <Label htmlFor="genre">Genre</Label>
-          <Select id="genre" defaultValue="PHNK">
-            <option value="PHNK">PHNK</option>
-            <option value="WAVE">WAVE</option>
-            <option value="Bassline">Bassline</option>
+          <Select id="genre" defaultValue="">
+            <option value="">Select a genre</option>
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="Hip Hop">Hip Hop</option>
+            <option value="R&B">R&B</option>
             <option value="Electronic">Electronic</option>
+            <option value="Dance">Dance</option>
+            <option value="House">House</option>
+            <option value="Techno">Techno</option>
+            <option value="Trance">Trance</option>
+            <option value="Drum & Bass">Drum & Bass</option>
+            <option value="Dubstep">Dubstep</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Blues">Blues</option>
+            <option value="Classical">Classical</option>
+            <option value="Country">Country</option>
+            <option value="Reggae">Reggae</option>
+            <option value="Funk">Funk</option>
+            <option value="Soul">Soul</option>
+            <option value="Metal">Metal</option>
+            <option value="Punk">Punk</option>
+            <option value="Alternative">Alternative</option>
+            <option value="Indie">Indie</option>
+            <option value="Folk">Folk</option>
+            <option value="Latin">Latin</option>
+            <option value="K-Pop">K-Pop</option>
+            <option value="World">World</option>
+            <option value="Ambient">Ambient</option>
+            <option value="Experimental">Experimental</option>
           </Select>
         </div>
         <div>
